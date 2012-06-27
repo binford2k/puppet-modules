@@ -1,0 +1,13 @@
+This is just a simple proof of concept module.
+
+It allows you to ensure that the permissions of a file meet permission restrictions.
+It will flag files which contain permission bits that are more permissive than the
+mode you specify.
+
+Example:
+  fileperms { 'sudoers':
+    ensure => present,
+    path   => '/etc/sudoers',
+    perms  => '0640',
+  }
+
