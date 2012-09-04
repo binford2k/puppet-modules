@@ -1,0 +1,6 @@
+To use this, simply add resource_statuses to your list of report handlers
+in your master's puppet.conf after you've put the module in place.
+
+For example,
+  reports = https, resource_statuses
+
